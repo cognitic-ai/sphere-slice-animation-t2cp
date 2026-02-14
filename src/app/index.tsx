@@ -1,15 +1,10 @@
-import { ScrollView, Text } from "react-native";
+import { View } from "react-native";
+import SphereScene from "@/components/sphere-scene";
 
 export default function IndexRoute() {
   return (
-    <ScrollView
-      contentInsetAdjustmentBehavior="automatic"
-      style={{
-        padding: 16,
-        backgroundColor: "white",
-      }}
-    >
-      <Text>Hello world</Text>
-    </ScrollView>
+    <View style={{ flex: 1 }}>
+      <SphereScene />
+    </View>
   );
 }
